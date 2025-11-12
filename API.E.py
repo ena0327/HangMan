@@ -1,3 +1,4 @@
+
 # ENABEANA
 # pip install requests 
 # Url..
@@ -9,10 +10,16 @@ def get_pokemon_info(name):
   
     url = f"{base_url}/pokemon/{name}"
     response = requests.get(url)
-    print()
+
+    if response.status_code == 200:
+        data = response.json()
+        print(data)
+    else:
+        print(f"Error: {response.status_code}")
 
     pokemon_name= "pikachu"
     get_pokemon_info(pokemon_name)
+    print()
     
 
 
