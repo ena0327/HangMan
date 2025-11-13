@@ -6,21 +6,20 @@
 import requests 
 
 base_url = "https://pokeapi.co/api/v2/"
-def get_pokemon_info(name):
+def get_pokemon_info(pokemon):
   
-    url = f"{base_url}/pokemon/{name}"
+    url = f"{base_url}/pokemon/"
     response = requests.get(url)
 
     if response.status_code == 200:
         data = response.json()
-        print(data)
+        print(data.pokemon)
     else:
         print(f"Error: {response.status_code}")
 
-    pokemon_name= "pikachu"
-    get_pokemon_info(pokemon_name)
-    print()
-    
+
+get_pokemon_info(pokemon)
+
 
 
 
