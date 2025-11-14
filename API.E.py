@@ -24,6 +24,11 @@ def get_pokemon_info(name):
 
 get_pokemon_info('')
 
+catagoryies_list = [Pokemon, ]
+
+
+def shuffle_list(results):
+
 
 
 
