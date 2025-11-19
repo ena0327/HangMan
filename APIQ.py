@@ -71,4 +71,13 @@ def display_hangman(wrong_guesses):
         print (display)
 
 def play_hangman():
-   secret_word
+#  secret_word
+guessed_letters =[]
+wrong_guesses = 0
+max_wrong_guesses = len(HANGMANSTAGES) - 1
+
+print ( "game started")
+
+while wrong_guesses < max_wrong_guesses and "_" in display_game_state(secret_word,guessed_letters):
+    display_hangman(wrong_guesses)
+    display_game_state
