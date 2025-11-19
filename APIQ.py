@@ -64,4 +64,11 @@ def display_hangman(wrong_guesses):
     def_current_word(word,guessed_letters):
     displayed = ""
     for letter in word :
-        if letter in guessed_letter
+        if letter in guessed_letters :
+            display += letter+ " "
+      else:
+        display += "_"
+        print (display)
+
+def play_hangman():
+   secret_word
