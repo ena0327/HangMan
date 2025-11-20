@@ -81,4 +81,16 @@ print ( "game started")
 while wrong_guesses < max_wrong_guesses and "_" in display_game_state(secret_word,guessed_letters):
     display_hangman(wrong_guesses)
     display_game_state (secret_words , guessed_letters)
-    print(f"guessed letter")
+    print(f"Guessed letters : {','. join (sorted (guessed letters))}") 
+
+    guess = input("guess a letter : ").lower()
+
+    if not guess.isalpha() or len(guess) ! = 1:
+      print("Please enter a single letter .")
+    continue
+   if guess in guessed_letters:
+      print(" You already guessed that letter")
+    continue
+
+
+
