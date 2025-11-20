@@ -80,4 +80,5 @@ print ( "game started")
 
 while wrong_guesses < max_wrong_guesses and "_" in display_game_state(secret_word,guessed_letters):
     display_hangman(wrong_guesses)
-    display_game_state
+    display_game_state (secret_words , guessed_letters)
+    print(f"guessed letter")
