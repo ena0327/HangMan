@@ -21,5 +21,6 @@ def get_pokemon_info(name):
         for item in data['results']:
             print(item['name'])
     else:
-        print(f"Error: {response.status_code}")
+        print(f"Error: {response.status_code}")     
+        #hdgfhxskghdgfskgtksk QUAFIA HATES ME ;[
 
