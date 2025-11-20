@@ -5,9 +5,10 @@
 import json
 import requests 
 
+pokeylist = []
 base_url = "https://pokeapi.co/api/v2/"
 def get_pokemon_info(name):
-  
+    global pokeylist
     url = f"{base_url}pokemon/"
     response = requests.get(url, verify=False)
 
@@ -16,25 +17,9 @@ def get_pokemon_info(name):
         # print("this is the raw data")
         # print(data)
         print("here are the list of pokemons:")
+        pokeylist = data['results']
         for item in data['results']:
             print(item['name'])
     else:
         print(f"Error: {response.status_code}")
-
-
-get_pokemon_info('')
-
-catagoryies_list = [Pokemon, ]
-
-
-def shuffle_list(results):
-
-
-
-
-
-
-
-
-
 
