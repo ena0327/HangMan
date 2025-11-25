@@ -93,7 +93,19 @@ while wrong_guesses < max_wrong_guesses and "_" in display_game_state(secret_wor
     continue
 
 
- 
+ guessed_letters.add(guess)
 
+if guess in chosen_word:
+    for i , char in enumarate(chosen_word) :
+        if char == guess
+    print("Correct guess!")
+  else :
+    incorrected_guess += 1
+    print(" Incorrect guess")
 
+  display_game_state(incorrect_guesses,hidden_word_display,guessed_letters)
 
+  if"_" not in hidden_word_display :
+    print(f"You guessed the word :{chosen_word} ")
+  else :
+   print
