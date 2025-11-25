@@ -24,3 +24,4 @@ def get_pokemon_info(name):
         print(f"Error: {response.status_code}")     
         #hdgfhxskghdgfskgtksk QUAFIA HATES ME ;[
 
+get_pokemon_info(" ")
