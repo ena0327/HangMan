@@ -27,6 +27,7 @@ def get_pokemon_info(name):
 
         get_pokemon_info(" ")
         random = __import__('random')
-random_word = random.choice(pokeylist)
+onePokemon = random.choice(pokeylist)
+choosenName = onePokemon["name"]
 
-print(f"The randomly chosen element is: {random_word}")
+print(f"The randomly chosen element is: {choosenName}")
