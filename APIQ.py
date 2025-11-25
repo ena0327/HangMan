@@ -84,13 +84,13 @@ def play_hangman():
   global wrong_guesses
   wrong_guesses = 0
   global max_wrong_guesses
-  max_wrong_guesses = len(HANGMANSTAGES) - 1
+  max_wrong_guesses = len(HANGMAN_STAGES)-1
 
   print ( "game started")
 
   while wrong_guesses < max_wrong_guesses and "_" in display_game_state(secret_word,guessed_letters):
     display_hangman(wrong_guesses)
-    display_game_state (secret_words , guessed_letters)
+    display_game_state (secret_words , guessed_letter)
     print(f"Guessed letters : {','. join (sorted(guessed letters))}")
     guess = input("guess a letter : ").lower()
 
