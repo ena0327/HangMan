@@ -3,6 +3,7 @@
 # pip install requests 
 # Url..
 import json
+import random
 import requests 
 
 pokeylist = []
@@ -25,4 +26,7 @@ def get_pokemon_info(name):
         #hdgfhxskghdgfskgtksk QUAFIA HATES ME ;[
 
         get_pokemon_info(" ")
+        random = __import__('random')
+random_word = random.choice(pokeylist)
 
+print(f"The randomly chosen element is: {random_word}")
