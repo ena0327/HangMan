@@ -92,6 +92,8 @@ while wrong_guesses < max_wrong_guesses and "_" in display_game_state(secret_wor
       print(" You already guessed that letter")
     continue
 
-guessed_letters 
+
+ 
+
 
 
