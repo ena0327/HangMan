@@ -3,11 +3,8 @@ import importlib
 import API.E.py
 
 importlib.reload(API.E)
+secret_word = API.E.choosenName
 
-def play_hangman():
-    importlib.reload(API.E)
-    secret_word = API.E.choosenName
-    print("Secret word :" {secret_word})
 
 HANGMAN_STAGES = [
     '''
