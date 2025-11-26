@@ -1,6 +1,6 @@
 import random
 import importlib
-import API.E.py
+import API.E
 
 importlib.reload(API.E)
 secret_word = API.E.choosenName
@@ -84,7 +84,8 @@ def display_word(secret_word, guessed_letters):
 
 def play_hangman():
     importlib.reload(API.E)
-    secret_word = API_E.choosenName
+    secret_word = API.E.choosenName
+    print(f"secret word :{secret word}")
     guessed_letters = set()
     wrong_guesses = 0
     max_wrong_guesses = len(HANGMAN_STAGES) - 1
