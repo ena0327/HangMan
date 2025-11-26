@@ -1,4 +1,13 @@
 import random
+import importlib
+import API.E.py
+
+importlib.reload(API.E)
+
+def play_hangman():
+    importlib.reload(API.E)
+    secret_word = API.E.choosenName
+    print("Secret word :" secret word)
 
 HANGMAN_STAGES = [
     '''
