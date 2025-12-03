@@ -32,4 +32,4 @@ get_pokemon_info()
 onePokemon = random.choice(pokeylist)
 choosenName = onePokemon["name"]
 
-print(f"The randomly chosen element is: {choosenName}")
+#print(f"The randomly chosen element is: {choosenName}")

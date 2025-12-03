@@ -83,7 +83,7 @@ def display_word(secret_word, guessed_letters):
 
 def play_hangman():
     secret_word = Ena.choosenName
-    print(f"secret word :{secret_word}")
+   #print(f"secret word :{secret_word}")
     guessed_letters = set()
     wrong_guesses = 0
     max_wrong_guesses = len(HANGMAN_STAGES) - 1
